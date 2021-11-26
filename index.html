@@ -13,15 +13,15 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header header--border">
-        <div class="header__container header__bg">
+    <header class="header header__ident">
+        <div class="header__bg">
             <img class="header__logo" src="./images/project-logo-white.svg" alt="Konstukt Company Logo">
-            <h1 class="header__headline header__headline--color">Partner with Konstrukt</h1>
+            <h1 class="header__title header__title--color">Partner with Konstrukt</h1>
             <p class="header__text header__text--color">An award-winning construction management firm</p>
             <span class="header__designator header__designator--color">Scroll down</span>
         </div>
 
-        <nav class="nav">
+        <nav class="nav container">
             <a nav__logo href="#">
                 <img class="nav__icon" src="./images/project-logo-black.svg" alt="Konstukt Company Logo">
             </a>
@@ -37,21 +37,28 @@
     </header>
 
     <main>
-        <section>
-            <h2>Our story</h2>
-            <p>Founded in 2011 by John Mathew Smith, Konstruct has become the number one construction management firm</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-            magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-            laoreet dolore magna aliquam erat.</p>
+        <section class="about container about__idents">
+            <h2 class="about__title">Our story</h2>
+            <div class="about__thumb">
+                <div class="about__box">
+                    <p class="about__subtitle">Founded in 2011 by John Mathew Smith, <span class="about__subtitle--accent">Konstruct</span> has become the number one construction
+                        management firm</p>
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore
+                        magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut
+                        laoreet dolore magna aliquam erat.</p>
+                </div>
 
-            <ul>
-                <li>We plan</li>
-                <li>We manage</li>
-                <li>We build</li>
-            </ul>
+                <ul class="about__offers">
+                    <li class="about__plan about__plan--colorize">We <br />plan</li>
+                    <li class="about__manage about__manage--colorize">We manage</li>
+                    <li class="about__build about__manage--colorize">We <br />build</li>
+                </ul>
+            </div>
         </section>
 
-        <section>
+        <section class="capabilities container capabilities__idents">
             <h2>Our capabilities</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
             magna aliquam erat.</p>
@@ -81,7 +88,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="get-in-touch container get-in-touch__idents">
             <h2>Want to build something amazing?</h2>
             <button type="button"></button>
         </section>
