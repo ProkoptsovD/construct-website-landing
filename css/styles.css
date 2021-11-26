@@ -197,7 +197,7 @@ body {
 }
 
 .about__box {
-  margin-right: 98px;
+  margin-right: 77px;
 }
 
 .about__subtitle {
@@ -228,7 +228,7 @@ body {
   margin: 0;
   padding: 0;
   margin-top: -20px;
-  margin-right: -20px;
+  margin-right: 0px;
 
   justify-content: flex-end;
 
@@ -316,4 +316,86 @@ body {
   text-transform: uppercase;
 
   color: var(--secondary-text-color);
+}
+
+/* Capabilities section pastiche */
+
+.capabilities {
+  display: block;
+}
+
+.thumb1 {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 78px;
+}
+
+.capabilities__title {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  margin-right: 155px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.thumb1__text {
+  margin: 0;
+  padding: 0;
+  margin-right: 32px;
+
+  font-size: 11px;
+  line-height: 1.73;
+
+  letter-spacing: 0.03em;
+}
+
+.capabilities__btn {
+  min-width: 150px;
+  min-height: 40px;
+
+  padding: 11px 29px;
+  margin-left: auto;
+
+  border: none;
+
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: 0.03px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+
+.service {
+  display: flex;
+  flex-basis: calc(100% / 3 - 56px);
+
+  margin: 0;
+  padding: 0;
+  margin-top: -28px;
+  margin-right: -28px;
+
+  list-style: none;
+}
+
+.service__element {
+  margin-top: 28px;
+  margin-right: 28px;
+
+  border: 1px solid #e6e6e6;
+}
+
+.service-box {
+  padding: 25px 22px 39px 23px;
 }
