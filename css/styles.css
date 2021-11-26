@@ -1,5 +1,6 @@
 :root {
   --primary-bg-color: #ffffff;
+  --secondary-bg-color: #171819;
   --primary-text-color: #48555b;
   --secondary-text-color: #ffffff;
   --accent-color: #00a4e5;
@@ -439,7 +440,7 @@ body {
   background-position: center;
   background-size: cover;
 
-  background-color: #d7d7d7;
+  background-color: var(--secondary-bg-color);
 }
 
 .get-in-touch__title {
@@ -464,4 +465,81 @@ body {
 
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+}
+
+/* Newsletter aside section pastiche */
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -1px;
+  padding: 30px 0;
+
+  background-color: var(--secondary-bg-color);
+}
+
+.newsletter__title {
+  margin: 0;
+  padding: 0;
+
+  margin-right: 70px;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+
+  text-align: center;
+  letter-spacing: 0.053em;
+
+  color: var(--secondary-text-color);
+}
+
+.newsletter_input {
+  width: 250px;
+  height: 40px;
+  border: 1px solid #979797;
+}
+
+.newsletter__btn {
+  min-width: 150px;
+  min-height: 40px;
+
+  font-size: 13px;
+  line-height: 1.15;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  border: none;
+
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+
+/* footer pastiche */
+.footer {
+  display: flex;
+
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.footer__thumb {
+}
+.footer__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 11px;
+  line-height: 1.18;
+
+  letter-spacing: 0.052em;
+
+  text-transform: uppercase;
+}
+.footer__icon {
+  width: 102px;
+  height: 23px;
 }
