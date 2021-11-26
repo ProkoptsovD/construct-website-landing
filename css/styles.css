@@ -1,4 +1,5 @@
 :root {
+  --primary-bg-color: #ffffff;
   --primary-text-color: #48555b;
   --secondary-text-color: #ffffff;
   --accent-color: #00a4e5;
@@ -10,14 +11,158 @@ body {
   font-weight: normal;
   font-size: 13px;
   line-height: 1.77;
-  letter-spacing: 0.013rem;
+  letter-spacing: 0.0125em;
 
+  background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 }
 
 /* header pastiche */
 
+/* Header container  pastiche*/
+.header {
+  display: flex;
+  flex-basis: calc(100% - 2);
+  flex-direction: column;
+}
+
+.header--border {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* .header__container {
+  padding-bottom: 71px;
+} */
+
+.header__bg {
+  background-image: url("../images/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-color: #d7d7d7;
+}
+
+/* background-image: url("../images/bg-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; */
+/* } */
+
 .header__logo {
+  display: block;
   width: 102px;
   height: 23px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 317px;
+  margin-top: 41px;
+}
+
+.header__headline {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.17;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.36em;
+}
+
+.header__headline--color {
+  color: var(--secondary-text-color);
+}
+
+.header__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 221px;
+
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+}
+
+.header__text--color {
+  color: var(--secondary-text-color);
+}
+
+.header__designator {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 71px;
+
+  font-size: 11px;
+  line-height: 1.18;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.23em;
+}
+
+.header__designator--color {
+  color: var(--secondary-text-color);
+}
+
+/* Header navigation section pastiche */
+.nav {
+  display: flex;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+}
+
+.nav__logo {
+  margin-right: auto;
+}
+
+.nav__icon {
+  width: 80px;
+  height: 18px;
+}
+
+.nav__tabs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  list-style: none;
+
+  font-size: 12px;
+  line-height: 1.17;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.23em;
+}
+
+.nav__element {
+  margin-right: 40px;
+  padding: 25px 0 24px 0;
+}
+
+.nav__element:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: var(--primary-text-color);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--accent-color);
 }
