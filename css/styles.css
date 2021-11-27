@@ -1,6 +1,7 @@
 :root {
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #171819;
+  --third-bg-color: #141a20;
   --primary-text-color: #48555b;
   --secondary-text-color: #ffffff;
   --accent-color: #00a4e5;
@@ -24,6 +25,10 @@ body {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.no-list-style {
+  list-style: none;
 }
 
 /* header pastiche */
@@ -371,6 +376,7 @@ body {
 
   border: none;
 
+  font-family: inherit;
   font-size: 13px;
   line-height: 1.15;
   letter-spacing: 0.03px;
@@ -454,6 +460,7 @@ body {
   min-width: 150px;
   min-height: 40px;
 
+  font-family: inherit;
   font-size: 13px;
   line-height: 1.15;
 
@@ -505,6 +512,7 @@ body {
   min-width: 150px;
   min-height: 40px;
 
+  font-family: inherit;
   font-size: 13px;
   line-height: 1.15;
 
@@ -520,18 +528,27 @@ body {
 
 /* footer pastiche */
 .footer {
-  display: flex;
+  padding-top: 42px;
 
   color: var(--secondary-text-color);
-  background-color: var(--secondary-bg-color);
+  background-color: var(--third-bg-color);
 }
 
 .footer__thumb {
+  display: flex;
 }
+
+.footer__sub-thumb1 {
+  width: 250px;
+}
+
 .footer__title {
   margin: 0;
   padding: 0;
 
+  margin-bottom: 19px;
+
+  font-weight: 400;
   font-size: 11px;
   line-height: 1.18;
 
@@ -539,7 +556,68 @@ body {
 
   text-transform: uppercase;
 }
+
 .footer__icon {
   width: 102px;
   height: 23px;
+
+  margin-bottom: 15px;
+}
+
+.footer__text {
+  font-size: 11px;
+  line-height: 1.73;
+
+  letter-spacing: 0.053em;
+}
+
+.footer__sub-thumb2 {
+  display: flex;
+  flex-basis: calc(100% / 3 - 70px);
+
+  font-size: 11px;
+  line-height: 227;
+
+  letter-spacing: 0.05em;
+}
+
+.footer__tabs {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 2 - 74px);
+}
+
+.address {
+  font-size: 11px;
+  line-height: 1.45;
+
+  letter-spacing: 0.05em;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
+
+  width: 100px;
+  height: 100px;
+}
+
+/* .social__element {
+  justify-content: space-between;
+} */
+
+/* .social__element:not(:last-child) {
+  margin-right: ;
+} */
+
+.social__icon {
+  width: 12px;
+  height: 12px;
+}
+
+.copyright {
+  background-color: var(--secondary-bg-color);
 }
