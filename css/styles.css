@@ -531,7 +531,8 @@ body {
   padding-top: 42px;
 
   color: var(--secondary-text-color);
-  background-color: var(--third-bg-color);
+  /* background-color: var(--third-bg-color); */
+  background-color: coral;
 }
 
 .footer__thumb {
@@ -573,18 +574,42 @@ body {
 
 .footer__sub-thumb2 {
   display: flex;
-  flex-basis: calc(100% / 3 - 70px);
+  flex-basis: calc(100% / 2);
+  min-width: 260px;
 
   font-size: 11px;
-  line-height: 227;
+  line-height: 2.27;
 
   letter-spacing: 0.05em;
 }
 
 .footer__tabs {
-  display: flex;
+  background-color: navy;
+
+  margin: 0;
+  padding: 0;
+  /* display: flex;
   flex-direction: column;
-  flex-basis: calc(100% / 2 - 74px);
+  flex-basis: calc(100% / 2 - 74px); */
+}
+
+.footer__inset {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 2 - 38px);
+  /* margin-top: -38px;
+  margin-left: -38px; */
+  margin: 0;
+  padding: 0;
+  margin-left: -38px;
+  margin-top: -38px;
+
+  background-color: olive;
+}
+
+.footer__element {
+  margin-top: 38px;
+  margin-left: 38px;
 }
 
 .address {
