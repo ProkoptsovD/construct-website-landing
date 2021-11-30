@@ -21,18 +21,21 @@
             <span class="header__designator header__designator--color">Scroll down</span>
         </div>
 
-        <nav class="nav container">
-            <a nav__logo href="#">
-                <img class="nav__icon" src="./images/project-logo-black.svg" alt="Konstukt Company Logo">
-            </a>
-
-            <ul class="nav__tabs">
-                <li class="nav__element"><a class="nav__link nav__link--hovered nav__link--current" href="./index.html">Home</a></li>
-                <li class="nav__element"><a class="nav__link nav__link--hovered nav__link--current" href="#">About</a></li>
-                <li class="nav__element"><a class="nav__link nav__link--hovered nav__link--current" href="#">Services</a></li>
-                <li class="nav__element"><a class="nav__link nav__link--hovered nav__link--current" href="#">Work</a></li>
-                <li class="nav__element"><a class="nav__link nav__link--hovered nav__link--current" href="#">Contact</a></li>
-            </ul>
+        <nav class="nav">
+            <div class="container">
+                <a class="nav__logo" href="#">
+                    <img class="nav__icon" src="./images/project-logo-black.svg" alt="Konstukt Company Logo">
+                </a>
+                
+                <ul class="nav__tabs">
+                    <li class="nav__element"><a class="nav__link nav__link--hovered nav__link--current" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav__element"><a class="nav__link nav__link--hovered nav__link--current" href="#">About</a></li>
+                    <li class="nav__element"><a class="nav__link nav__link--hovered nav__link--current" href="#">Services</a></li>
+                    <li class="nav__element"><a class="nav__link nav__link--hovered nav__link--current" href="#">Work</a></li>
+                    <li class="nav__element"><a class="nav__link nav__link--hovered nav__link--current" href="#">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -113,29 +116,36 @@
             
             <div class="footer__sub-thumb2">
                 <h3 class="footer__title">Links</h3>
-                <ul class="footer__tabs no-list-style">
-                    <li><a href=""></a>Home</li>
-                    <li><a href=""></a>About</li>
-                    <li><a href=""></a>Servives</li>
-                    <li><a href=""></a>Projects</li>
-                    <li><a href=""></a>Contact us</li>
-                </ul>
-            
-                <ul class="footer__inset no-list-style">
-                    <li class="footer__element">Faq</li>
-                    <li class="footer__element">Blog</li>
-                    <li class="footer__element">Terms</li>
-                    <li class="footer__element">Partners</li>
-                    <li class="footer__element">Careers</li>
-                    <li class="footer__element">News</li>
-                </ul>
+
+                <div class="footer__nav">
+                    <ul class="footer__tabs no-list-style">
+                        <li><a href=""></a>Home</li>
+                        <li><a href=""></a>About</li>
+                        <li><a href=""></a>Servives</li>
+                        <li><a href=""></a>Projects</li>
+                        <li><a href=""></a>Contact us</li>
+                    </ul>
+                    
+                    <ul class="footer__blog no-list-style">
+                        <li class="footer__element">Faq</li>
+                        <li class="footer__element">Blog</li>
+                        <li class="footer__element">Terms</li>
+                    </ul>
+
+                    <ul class="footer__outter no-list-style">
+                        <li class="footer__element">Partners</li>
+                        <li class="footer__element">Careers</li>
+                        <li class="footer__element">News</li>
+                    </ul>
+                </div>
+                
             </div>
             
             <address class="address">
-                <h3 class="footer__title">Contact us</h3>
-                <ul class="address__links no-list-style">
-                    <li>
-                        <a href="#">
+                <p class="footer__title">Contact us</p>
+                <ul class="address__contacts no-list-style">
+                    <li class="address__element">
+                        <a class="address__link" href="#">
                             213 Baker Street<br />
                             Oriel City Kounty<br />
                             7000 KNW,<br />
@@ -143,27 +153,33 @@
                         </a>
                     </li>
             
-                    <li><a href="mailto:info@konstruct.com">info@konstruct.com</a></li>
-                    <li><a href="telto:+239942334022"></a>+23 994 233 4022</li>
+                    <li class="address__element"><a class="address__link" href="mailto:info@konstruct.com">info@konstruct.com</a></li>
+                    <li class="address__element"><a class="address__link" href="telto:+239942334022"></a>+23 994 233 4022</li>
                 </ul>
             </address>
             
             <ul class="footer__social no-list-style">
                 <li class="social__element">
                     <a href="https://facebook.com">
-                        <img class="social__icon" src="./images/facebook-icon.svg" alt="Facebook">
+                        <svg class="social__icon" width="12px" height="12px">
+                            <use href="./images/icons.svg#icon-facebook" aria-label="Facebook"></use>
+                        </svg>
                     </a>
                 </li>
 
                 <li class="social__element">
                     <a href="https://twitter.com">
-                        <img class="social__icon" src="./images/twitter-icon.svg" alt="Twitter">
+                        <svg class="social__icon" width="12px" height="12px">
+                            <use href="./images/icons.svg#icon-twitter" aria-label="Twitter"></use>
+                        </svg>
                     </a>
                 </li>
 
                 <li class="social__element">
                     <a href="https://google.com">
-                        <img class="social__icon" src="./images/google-icon.svg" alt="Google">
+                        <svg class="social__icon" width="12px" height="12px">
+                            <use href="./images/icons.svg#icon-google" aria-label="Google"></use>
+                        </svg>
                     </a>
                 </li>
             </ul>
