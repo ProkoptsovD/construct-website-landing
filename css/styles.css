@@ -5,6 +5,9 @@
   --primary-text-color: #48555b;
   --secondary-text-color: #ffffff;
   --accent-color: #00a4e5;
+
+  --transition-time: 250ms;
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -177,6 +180,8 @@ body {
 .nav__link:hover,
 .nav__link:focus {
   color: var(--accent-color);
+
+  transition: color var(--transition-time) var(--cubic-bezier);
 }
 
 /* Main pastiche */
@@ -520,7 +525,7 @@ body {
   cursor: pointer;
 }
 
-/* Newsletter aside section pastiche */
+/* Newsletter form section pastiche */
 .newsletter {
   display: flex;
   justify-content: center;
@@ -532,7 +537,7 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
-.newsletter__title {
+.newsletter__label {
   margin: 0;
   padding: 0;
 
@@ -548,10 +553,23 @@ body {
   color: var(--secondary-text-color);
 }
 
-.newsletter_input {
+.newsletter__input {
   width: 250px;
   height: 40px;
+
+  padding-left: 16px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+
   border: 1px solid #979797;
+  border-right: none;
+}
+
+.newsletter__input::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.07;
 }
 
 .newsletter__btn {

@@ -98,11 +98,14 @@
         </section>
     </main>
 
-    <aside class="newsletter">
-        <span class="newsletter__title">Newsletter Signup</span>
-        <input class="newsletter_input" type="email">
+    <form class="newsletter" autocomplete="on">
+        <label class="newsletter__label" for="user_email">
+            Newsletter Signup
+        </label>
+        <input class="newsletter__input" type="email" id="user_email" placeholder="test@youremail.com">
+        
         <button class="newsletter__btn" type="submit">Signup</button>
-    </aside>
+    </form>
 
     <footer class="footer">
         <div class="footer__thumb container">
